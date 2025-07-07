@@ -18,4 +18,3 @@ static/
 .vscode/
 .idea/
 *.log
-.env
