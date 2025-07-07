@@ -30,7 +30,7 @@ GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 SECRET_KEY = 'django-insecure-d5m_z^)cm0!amfbutoebq88vi6p3#t*%@d5#d7sy5*ngv2pj^@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -104,26 +104,17 @@ TIME_ZONE = 'Africa/Douala'
 #         'PORT': '5432',
 #     }
 # }
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': BASE_DIR / 'db.sqlite3',
     },
     'OPTIONS': {
             'timeout': 20,
     }
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     },
-#     'OPTIONS': {
-#             'timeout': 20,
-#     }
-# }
 
 
 # Password validation
