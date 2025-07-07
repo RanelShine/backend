@@ -1,0 +1,21 @@
+# Environnement virtuel
+venv/
+
+# Base de données SQLite
+*.sqlite3
+
+# Fichiers temporaires Python
+*.pyc
+__pycache__/
+
+# Fichiers media (uploadés)
+media/
+
+# Fichiers statiques générés
+static/
+
+# Fichiers/dossiers spécifiques à l'IDE
+.vscode/
+.idea/
+*.log
+.env
